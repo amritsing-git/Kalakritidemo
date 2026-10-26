@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Kalakruti | Handmade with Heart</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="announcement">
+    🌸 Handmade with heart · Prepaid orders only · Pune, Maharashtra
+  </div>
+
+
+  <!-- HEADER -->
+  <header class="header">
+
+    <a href="#home" class="brand">
+      <img src="assets/logo.jpg" alt="Kalakruti Logo">
+
+      <div>
+        <strong>Kalakruti</strong>
+        <span>Handmade with heart ♡</span>
+      </div>
+    </a>
+
+
+    <nav class="desktop-nav">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#story">Our Story</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+
+    <div class="header-actions">
+
+      <button class="icon-btn" id="searchBtn">
+        ⌕
+      </button>
+
+      <button class="icon-btn cart-btn" id="cartBtn">
+        🛍
+        <b id="cartCount">0</b>
+      </button>
+
+      <button class="menu-btn" id="menuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+  </header>
+
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+
+    <button class="mobile-close" id="mobileClose">
+      ×
+    </button>
+
+    <a href="#home">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#story">Our Story</a>
+    <a href="#contact">Contact</a>
+
+  </div>
+
+
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+      <div class="hero-content">
+
+        <p class="eyebrow">
+          HANDMADE • FESTIVE • BEAUTIFUL
+        </p>
+
+        <h1>
+          Little details
+          <br>
+          <em>make celebrations</em>
+          <br>
+          feel special.
+        </h1>
+
+        <p class="hero-description">
+          Handcrafted floral decor, torans and diya holders —
+          made slowly, thoughtfully and with a whole lot of love.
+        </p>
+
+
+        <div class="hero-buttons">
+
+          <a href="#shop" class="btn primary">
+            Shop collection
+            <span>→</span>
+          </a>
+
+          <a href="#story" class="text-link">
+            Discover Kalakruti
+          </a>
+
+        </div>
+
+
+        <div class="trust-row">
+
+          <span>✦ Handmade</span>
+          <span>✦ Custom colours</span>
+          <span>✦ Prepaid orders</span>
+
+        </div>
+
+      </div>
+
+
+      <div class="hero-art">
+
+        <div class="hero-blob"></div>
+
+        <img
+          src="assets/product-5.jpg"
+          alt="Handmade Floral Decor"
+        >
+
+        <div class="floating-card">
+
+          <span>Made with ♡</span>
+
+          <strong>
+            for your
+            <br>
+            happy corners
+          </strong>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- CATEGORY STRIP -->
+    <section class="categories">
+
+      <div class="category">
+        <span>🌼</span>
+        <strong>Floral Decor</strong>
+        <small>Brighten your space</small>
+      </div>
+
+      <div class="category">
+        <span>🌸</span>
+        <strong>Torans</strong>
+        <small>Festive entrances</small>
+      </div>
+
+      <div class="category">
+        <span>🪔</span>
+        <strong>Diya Holders</strong>
+        <small>Light up moments</small>
+      </div>
+
+      <div class="category">
+        <span>🎀</span>
+        <strong>Latkans</strong>
+        <small>Pretty little details</small>
+      </div>
+
+    </section>
+
+
+
+    <!-- SHOP -->
+    <section class="shop" id="shop">
+
+      <div class="section-heading">
+
+        <div>
+
+          <p class="eyebrow">
+            SHOP THE COLLECTION
+          </p>
+
+          <h2>
+            Made to make you smile.
+          </h2>
+
+        </div>
+
+
+        <button class="filter-toggle" id="filterToggle">
+          All products ▾
+        </button>
+
+      </div>
+
+
+      <div class="filters" id="filters">
+
+        <button class="active" data-filter="all">
+          All
+        </button>
+
+        <button data-filter="toran">
+          Torans
+        </button>
+
+        <button data-filter="latkan">
+          Latkans
+        </button>
+
+        <button data-filter="diya">
+          Diya Holders
+        </button>
+
+        <button data-filter="decor">
+          Decor
+        </button>
+
+      </div>
+
+
+      <div class="product-grid" id="productGrid"></div>
+
+    </section>
+
+
+
+    <!-- STORY -->
+    <section class="story" id="story">
+
+      <div class="story-image">
+
+        <img
+          src="assets/product-4.jpg"
+          alt="Kalakruti Handmade"
+        >
+
+      </div>
+
+
+      <div class="story-content">
+
+        <p class="eyebrow">
+          THE KALAKRUTI STORY
+        </p>
+
+        <h2>
+          Not factory-made.
+          <br>
+          <em>Heart-made.</em>
+        </h2>
+
+        <p>
+          Kalakruti is a little handmade corner where
+          colourful flowers, festive torans and tiny details
+          come together to make your home feel warmer.
+        </p>
+
+        <p>
+          Every piece is crafted with care, and colours can
+          be customised to match your celebration.
+        </p>
+
+        <a href="#contact" class="btn outline">
+          Talk to us →
+        </a>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- CUSTOM ORDER -->
+    <section class="custom-section">
+
+      <div>
+
+        <p class="eyebrow">
+          MAKE IT YOURS
+        </p>
+
+        <h2>
+          Want a custom colour
+          <br>
+          combination?
+        </h2>
+
+        <p>
+          Tell us your colours, occasion and quantity.
+          We'll create something special for you.
+        </p>
+
+      </div>
+
+
+      <a href="#contact" class="btn light">
+        Request custom order
+      </a>
+
+    </section>
+
+
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+      <div>
+
+        <p class="eyebrow">
+          LET'S CREATE SOMETHING PRETTY
+        </p>
+
+        <h2>
+          Have a question?
+        </h2>
+
+        <p>
+          For orders, custom colours or bulk requirements,
+          send us a DM.
+        </p>
+
+      </div>
+
+
+      <div class="contact-card">
+
+        <span>
+          📍 Pune, Maharashtra
+        </span>
+
+        <span>
+          🚫 No COD · Prepaid orders only
+        </span>
+
+        <a
+          href="https://instagram.com/kalakruti.house"
+          target="_blank"
+        >
+          @kalakruti.house ↗
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-brand">
+
+      <img src="assets/logo.jpg" alt="Kalakruti">
+
+      <div>
+        <strong>Kalakruti</strong>
+        <span>Handmade with heart ♡</span>
+      </div>
+
+    </div>
+
+
+    <span>
+      © 2026 Kalakruti. All handmade, all heart.
+    </span>
+
+  </footer>
+
+
+
+  <!-- OVERLAY -->
+  <div class="overlay" id="overlay"></div>
+
+
+
+  <!-- CART -->
+  <aside class="cart-drawer" id="cartDrawer">
+
+    <div class="drawer-header">
+
+      <h3>
+        Your bag
+      </h3>
+
+      <button id="closeCart">
+        ×
+      </button>
+
+    </div>
+
+
+    <div class="cart-items" id="cartItems"></div>
+
+
+    <div class="cart-bottom">
+
+      <div class="cart-total-row">
+
+        <span>
+          Subtotal
+        </span>
+
+        <strong id="cartTotal">
+          ₹0
+        </strong>
+
+      </div>
+
+
+      <button class="btn primary full" id="orderBtn">
+        Order on Instagram →
+      </button>
+
+      <small>
+        Demo checkout · Replace with your real ordering flow.
+      </small>
+
+    </div>
+
+  </aside>
+
+
+
+  <!-- PRODUCT MODAL -->
+  <div class="product-modal" id="productModal">
+
+    <div class="modal-card">
+
+      <button class="modal-close" id="modalClose">
+        ×
+      </button>
+
+
+      <img id="modalImage" src="" alt="">
+
+
+      <div class="modal-content">
+
+        <p class="eyebrow" id="modalCategory"></p>
+
+        <h2 id="modalTitle"></h2>
+
+        <div class="modal-price" id="modalPrice"></div>
+
+        <p id="modalDescription"></p>
+
+        <button class="btn primary full" id="modalAdd">
+          Add to bag
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script src="app.js"></script>
+
+</body>
+</html>
